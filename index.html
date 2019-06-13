@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personnel/ Guest In/ Out Management System. Built at INS Shivaji">
+    <meta name="author" content="Lt. Shubham Mehta, 09109A">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon.png">
+    <title>PMS</title>
+
+    <link rel="canonical" href="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="styles/cover.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">PMS</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Admin</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Personnel Management System</h1>
+        <p class="lead">Track personnel and visitors effortlessly. Generate visitor passes. Record movement of personnel. Maintain robust reports. <br> Empower paperless offices.</p>
+        <p class="lead">
+        <button type="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#createModal">Create</button>
+        <button type="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#validateModal">Validate</button>
+
+        <!-- Create Modal -->
+        <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="createModalLabel" style="color: black;">Create</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <button type="button" class="btn btn-dark">Personnel Exit Record</button>
+                <br><br>
+                <a href="createGatePass.html"><button type="button" class="btn btn-dark">Visitors' Gate Pass Issue</button></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Validate Modal -->
+        <div class="modal fade" id="validateModal" tabindex="-1" role="dialog" aria-labelledby="validateModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="validateModalLabel" style="color: black;">Validate</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <button type="button" class="btn btn-dark">Personnel Entry Record</button>
+                  <br><br>
+                  <button type="button" class="btn btn-dark">Visitors' Gate Pass Submission</button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Built with <img src="icons/heart.png" style="width: 2rem;">, by <a href="#">Lt. Shubham Mehta</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script language="javascript">
+      $(".nav-link").hover(function () {
+        $(this).toggleClass("active");
+      });
+    </script>
+
+  </body>
+</html>
